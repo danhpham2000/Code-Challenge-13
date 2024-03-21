@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap");
+
+:root {
+  --color-orange: hsl(31, 77%, 52%);
+  --color-dark-cyan: hsl(184, 100%, 22%);
+  --color-very-dark-cyan: hsl(179, 100%, 13%);
+
+  --color-paragraph: hsla(0, 0%, 100%, 0.75);
+  --color-bg-hd-button: hsl(0, 0%, 95%);
+}
+
+/* Big Shoulders Display */
+body {
+  margin: 0;
+  font-family: "Lexend Deca";
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160vh;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 10px;
+}
+
+.card .car-1 {
+  background: var(--color-orange);
+  grid-column: span 3;
+  width: 350px;
+  height: 450px;
+  border-radius: 10px 10px 0 0;
+}
+
+.content {
+  padding: 40px;
+}
+
+.content .heading {
+  font-family: "Big Shoulders Display";
+  font-size: 25px;
+  color: var(--color-bg-hd-button);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.content .paragraph {
+  font-size: 15px;
+  padding-right: 40px;
+  line-height: 25px;
+  margin-bottom: 30px;
+  color: var(--color-paragraph);
+  font-weight: 400;
+}
+
+.card .car-2 {
+  background: var(--color-dark-cyan);
+  grid-column: span 3;
+  width: 350px;
+  height: 450px;
+}
+
+.card button {
+  border: none;
+  padding: 20px 40px;
+  border-radius: 30px;
+  color: var(--color-orange);
+}
+
+.card .car-3 {
+  background: var(--color-very-dark-cyan);
+  grid-column: span 3;
+  width: 350px;
+  height: 450px;
+  border-radius: 0 0 10px 10px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
