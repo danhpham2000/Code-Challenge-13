@@ -19,7 +19,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 160vh;
+  height: 140vh;
 }
 
 .card {
@@ -31,9 +31,19 @@ body {
 .card .car-1 {
   background: var(--color-orange);
   grid-column: span 3;
-  width: 350px;
+  width: 400px;
   height: 450px;
   border-radius: 10px 10px 0 0;
+}
+
+.card .car-1 button {
+  border: none;
+  padding: 20px 50px;
+  border-radius: 30px;
+  color: var(--color-orange);
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
 }
 
 .content {
@@ -59,23 +69,92 @@ body {
 .card .car-2 {
   background: var(--color-dark-cyan);
   grid-column: span 3;
-  width: 350px;
+  width: 400px;
   height: 450px;
 }
 
-.card button {
+.card .car-2 button {
   border: none;
-  padding: 20px 40px;
+  padding: 20px 50px;
   border-radius: 30px;
-  color: var(--color-orange);
+  color: var(--color-dark-cyan);
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
 }
 
 .card .car-3 {
   background: var(--color-very-dark-cyan);
   grid-column: span 3;
-  width: 350px;
+  width: 400px;
   height: 450px;
   border-radius: 0 0 10px 10px;
+}
+
+.card .car-3 button {
+  border: none;
+  padding: 20px 50px;
+  border-radius: 30px;
+  color: var(--color-very-dark-cyan);
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    height: 100vh;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .card .car-1 {
+    grid-column: 1 / span 1;
+    border-radius: 10px 0 0 10px;
+    height: 650px;
+    letter-spacing: 0.5px;
+  }
+
+  .car-1 > * {
+    margin-top: 20px;
+  }
+
+  .car-1 .paragraph {
+    line-height: 35px;
+  }
+  .card .car-2 {
+    grid-column: 2 / span 1;
+    height: 650px;
+    letter-spacing: 0.5px;
+  }
+
+  .car-2 > * {
+    margin-top: 20px;
+  }
+
+  .car-2 .paragraph {
+    line-height: 35px;
+  }
+
+  .card .car-3 {
+    grid-column: 3 / span 1;
+    border-radius: 0 10px 10px 0;
+    height: 650px;
+    letter-spacing: 0.5px;
+  }
+
+  .car-3 > * {
+    margin-top: 20px;
+  }
+
+  .car-3 .paragraph {
+    line-height: 35px;
+  }
+
+  button {
+    margin-top: 100px;
+  }
 }
 
 .attribution {
